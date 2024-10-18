@@ -93,7 +93,37 @@ Even primitive data types like strings and numbers can be special temporary obje
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Object-oriented and prototype-based programming approaches
+------------------------------------------------------------
+Objects are foundational in JavaScript. 
 
+They're used to store information as key value pairs, share properties with other objects, and even implement specific JavaScript programming patterns. 
+
+JavaScript supports object oriented programming, meaning you can use the concepts of objects and classes in your code. 
+
+	* JavaScript also has built-in support for inheritance between objects via a concept called prototypal inheritance. 
+
+	* Certain parts of object-oriented programming and prototypal inheritance can confuse those new to JavaScript, so let's take some time to talk about each of these, how you might use 	them, and how they can work together. 
+
+
+	* Object-oriented programming or OOP is a programming paradigm that emphasizes using objects to represent data and behavior in an application in a way that mirrors real life 	entities with shared attributes and behaviors. 
+
+		. In object-oriented programming, objects can communicate with one another to store and share data and perform various tasks, providing reusable pieces of code to use across 		an application. 
+
+	* JavaScript itself is a prototype based language, which means that it leverages prototypal inheritance to implement paradigms such as object-oriented programming. It's how 			objects can link to and extend other objects called prototypes to access their properties. 
+
+		. In fact, all JavaScript objects inherit from or are linked to a built-in object called the prototype. 
+
+		. You can think of the prototype object as the main blueprint or template for creating all new objects in JavaScript. We'll delve further into these concepts in later 		videos, but in general, you can think of the relationship between object-oriented programming and prototype inheritance like this. (bell dings) 
+
+			Object-oriented programming is your general approach to organizing and managing code and sharing information between objects, while prototypal inheritance is 			JavaScript's built-in mechanism for creating new objects that extend other objects. 
+
+			You can use these approaches together to create scalable and robust applications with JavaScript. As you've learned, object-oriented programming and prototypal 			inheritance are not mutually exclusive concepts. 
+
+			In an object-oriented program, you use prototypal inheritance to extend objects, which helps to reduce complexity, makes for easier troubleshooting, and makes 			changes to your application less disruptive.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
