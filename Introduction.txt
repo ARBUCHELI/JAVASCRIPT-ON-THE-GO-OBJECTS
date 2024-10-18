@@ -1,0 +1,28 @@
+# Introduction
+--------------
+
+* Uncovering JavaScript objects
+-------------------------------
+Objects are everywhere in JavaScript. 
+
+They're a foundational concept every developer should understand, regardless of their experience level. 
+
+As a JavaScript developer, much of the code you write involves objects. 
+
+Objects help structure and organize code, reduce redundancy and solve complex problems with object-oriented design patterns. 
+
+There are different techniques for creating and working with objects and some of the underlying ways JavaScript can treat nearly everything as an object and even the various mechanisms for sharing properties and behaviors between objects can be confusing and often surprising to learn about. 
+
+So in this course, I'll guide you through the most common ways developers define and work with objects and JavaScript. 
+
+You'll understand the importance and versatility of objects and how they're used to represent just about everything in the language. 
+
+We'll also uncover many common mysteries behind concepts like prototypes, inheritance, classes, and more. 
+
+I'm Gil Hernandez, a software development instructor and developer for over 15 years, and I'm excited to kick off this learning journey into JavaScript objects with you. 
+
+So if you're familiar with the basics of JavaScript and ready to gain a deeper understanding of objects, I invite you to follow along in this course.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
