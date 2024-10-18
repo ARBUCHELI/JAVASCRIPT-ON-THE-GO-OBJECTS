@@ -26,3 +26,95 @@ So if you're familiar with the basics of JavaScript and ready to gain a deeper u
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Almost everything in JavaScript is an object
+----------------------------------------------
+If you're new to JavaScript or have even worked with it for some time, you might be surprised to learn that almost everything in JavaScript is an object. 
+
+Now, I said almost everything. 
+
+	So how exactly do we differentiate between what an object is and isn't? Let's kick things off by reviewing what objects are in JavaScript, they're key characteristics and the common 	ways developers use them. 
+
+		In JavaScript, there are two main types of data. 
+
+			. Primitive data types and objects both types behave differently. So understanding the differences between primitive types and objects is important if you want to 				become more proficient in JavaScript. 
+
+				JavaScript has seven basic built-in primitive data types. Those types include string, number, big, int, boolean, symbol, null, and undefined. 
+
+				These seven primitive types can hold only one value at a time and are immutable, meaning that once you create a primitive value like a string you can't 				change it without creating an entirely new value. 
+
+
+			. Now, anything in JavaScript that's not one of these seven primitive types is considered an object. 
+
+				The object is an incredibly versatile and complex type that developers use to represent information, manipulate data, and implement programming patterns like 				object-oriented programming. 
+
+				Objects consist of a collection of properties that can hold values of any type, including primitive values, functions and even other objects. 
+
+				And one of the key characteristics of JavaScript objects is that they are mutable. 
+
+				You can add new properties and values to an object, update existing properties or remove properties from an object at any time, allowing for a lot of 				flexibility and versatility in the language and building complex data structures. 
+
+				The most common way you might create objects is using object literal notation. That's the comma separated list of key value pairs wrapped in those curly 				braces we all know and love. 
+
+				In addition to the object literal, JavaScript has several built-in object types including array, functions and constructors. That's right, arrays and 						functions are a special type of object. 
+
+			. Arrays have built in properties and methods that let you add, update, and remove items and functions are objects that can be invoked or called and accept 			arguments. 
+			
+			. You can also assign arrays and functions to variables and properties of other objects. And JavaScript has other built-in objects that let you work with dates, math 			functions, and many more using different properties and methods of those objects. 
+
+			. And here's another interesting piece of information about JavaScript objects. In addition to the built-in object types I just talked about, JavaScript allows us to 			treat some of its primitive data types like numbers and strings as objects so that we can manipulate and work with them in all sorts of ways. 
+
+			. One way you might convert a primitive data type to an object is using JavaScript's new keyword followed by a constructor such as the string, number or boolean 				constructor. 
+
+			. Anytime you use a primitive type with the new keyword it's no longer considered a primitive. Instead, it becomes a string object, a number object, and so on, which 			allows you to access and call certain properties and methods of a primitive value. 
+
+			. So now you might be thinking, well I can easily access properties of a string like length and call methods on them like to uppercase and even do similar things 			withnumbers without converting them to objects. Is using the new keyword and constructor really necessary? 
+
+			. Well, converting primitive types to objects using the new keyword is not all that common. And you're right, it isn't the only way to access properties and methods 			of primitive values. 
+
+			. There's really no reason to create them manually because the JavaScript engine does some extra work behind the scenes to allow us access to methods and properties 			of strings, numbers and other primitives. 
+
+
+		Keep in mind that when you use properties and methods on a primitive, like a string, JavaScript converts that primitive to a temporary object like the string object. 
+
+		This special object wrapper, as it's called allows us to treat the primitive as an object so we can access properties and methods. 
+
+		And each primitive has a different object wrapper such as string, number, boolean and symbol and each provides different sets of properties and methods. 
+
+		Now, this process only happens temporarily behind the scenes and after the JavaScript interpreter is done accessing the properties or the methods we want to call the special 		object wrapper gets automatically destroyed and the data type is converted back to a primitive type. 
+
+		That's what helps keep primitive values fast and lightweight in memory. 
+
+Objects are a fundamental part of JavaScript. 
+
+Almost everything in the language is an object including arrays and functions or gets treated as an object. 
+
+Even primitive data types like strings and numbers can be special temporary objects that provide extra functionality.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
