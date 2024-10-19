@@ -1,0 +1,61 @@
+# 1. Describing and Using JavaScript Objects
+--------------------------------------------
+
+* Inheritance in JavaScript
+---------------------------
+	. Inheritance is a fundamental concept in JavaScript and object-oriented programming. 
+
+		It's what allows developers to create objects that take on or inherit the features and functionality of other objects and extend them. 
+
+		In JavaScript, inheritance is achieved through prototypes which I briefly introduced in the previous video. 
+
+		The more you work with JavaScript, the more you'll encounter the term prototype. And the general idea of prototypes and even prototypes themselves can be quite puzzling for 		various reasons. 
+
+		So let's spend some time reviewing the basics of inheritance and these mysterious prototypes and how they get used. 
+
+Take a moment to think about what a prototype might represent in the real world. 
+
+	. A prototype is usually a model from which other things are developed or patterned. 
+
+		For example, imagine a car factory that produces different models of cars. Each car model has unique features and specs, but they all share common components such as the 		engine, wheels, and steering system. These common components might be part of a prototype from which different car models are built. 
+
+		In the same way you can create different instances of an object with unique properties, but they can all inherit certain properties and methods from the same prototype. And 		in JavaScript, every object has a prototype. 
+
+		Whenever you create an object, it automatically gets linked to a prototype object via a special hidden prototype property. And that's because all JavaScript objects are part 		of a mechanism called the prototype chain. 
+
+		JavaScript uses it to implement inheritance and link objects together through their prototype. This prototype chain gets created as soon as you create an object and objects 		often inherit properties and methods from multiple prototypes. 
+
+		When you try to access a property or method of an object, the JavaScript engine will first look for that property or method on the object itself. If the object has the 		property or method, JavaScript uses it. If it doesn't find it, it will look for it on the object's prototype. If it still doesn't find it, it's going to continue up the 		prototype chain until it reaches the object prototype, which is the default prototype for all objects. 
+
+		In that case, the prototype is null, and that's where the chain ends. 
+
+
+	. In an earlier video, I mentioned that JavaScript arrays, objects, and primitive types, like strings, for example let you access or call certain built-in properties and methods 	that are available by default. Like length, push, slice, two string, and many more. 
+
+		So how do those methods become available to each array, string, or object instance you create? Well, as you've learned, everything in JavaScript can be thought of or treated 		as an object. 
+
+		So prototypes for objects and even the prototypes of constructors for primitive data types like strings define some generic methods and properties. And the prototype chain 		is what plays a major role in allowing those properties and methods to be passed on and inherited by the objects and primitive types used in your programs. 
+
+		So inheritance and prototypes make creating objects with common properties and methods possible, and it's important to understand the different ways to define objects. So in 		the following videos, we'll compare the different ways to create new object instances and their impact on inheritance.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
