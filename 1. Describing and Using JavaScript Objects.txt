@@ -78,6 +78,8 @@ So let's first explore the basic structure of JavaScript objects created using o
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Define an object using a constructor function
+-----------------------------------------------
 
 
 
