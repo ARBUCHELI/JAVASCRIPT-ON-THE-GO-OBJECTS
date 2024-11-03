@@ -80,6 +80,71 @@ So let's first explore the basic structure of JavaScript objects created using o
 
 * Define an object using a constructor function
 -----------------------------------------------
+In JavaScript there are two ways to create and store data in an object. 
+
+	. The object literal is the simplest and most common way to create objects. 
+
+	. The other way is using a constructor function. 
+
+So now let's explore what constructors are and how developers use them to describe an object structure and behavior with just a single function. 
+
+That way the next time you come across the term constructor or constructor function, you'll be more equipped with the basics of how they're used. 
+
+	A constructor is a special function that you call using JavaScript's new keyword. 
+
+	Think of a constructor function as a template for creating one or multiple objects with similar properties and behavior. 
+
+	When you call a constructor it creates and initializes a new object. 
+
+	And there are two main ways to create objects with constructor functions. 
+
+		One is with JavaScripts built in object constructor and the other is with a custom constructor function. 
+
+		You may come across the built-in object constructor function at times. 	
+
+		In the video, almost everything in JavaScript is an object. I mentioned that JavaScript provides several built-in constructors to convert primitive types, such as 
+		strings, arrays, numbers, and others into objects. 
+
+		So JavaScript also has an object constructor that can create a new empty object. 
+
+		Now with that approach you need to manually add new properties and methods to that object using .notation, which sounds tedious. And like a lot of extra typing, what if 
+		we had to create tens or hundreds of new objects this way? No thanks. 
+
+		So because of that developers avoid using the built-in object constructor. 
+
+		Instead, custom constructor functions are the most common way to create objects with constructors. 
+
+		You create a custom constructor similar to how you would write or declare a typical function in JavaScript using the function keyword. And you'll immediately recognize 		constructive functions because their name by convention starts with an uppercase letter and they rely heavily on JavaScripts 'this keyword' in the function body. So think 		back to your address book, which needs to store information about all your contacts such as their name, address, and phone number. 
+
+		Now, imagine a constructor function named contact that takes three arguments via parameters named name, address, and phone. 
+
+		And the job of this constructor function is to return a new contact object. 
+
+		JavaScripts 'this keyword' is important in a constructor function because it defines the properties and values of the created object. 
+
+		Think of the 'this keyword' as a placeholder that refers to the new object created by the constructor. So for example, to add a name property to a contact object you might 		specify that this.name should equal the value passed in for the name argument, this.address for the address argument, and so on. Once you've defined your function you can 		create a new instance of the contact object using the new keyword. 
+
+		And since the constructors 'this keyword' refers to the newly created object you can create multiple unique contact objects and pass each different arguments for name, 		address, and phone. 
+
+		Now, if you're familiar with the object literal syntax you might ask, why would I want to use constructive functions in the first place? Object literals are much simpler. 
+		Good question. Both object literals and constructive functions have their place in JavaScript programming and can be used effectively depending on the situation. 
+
+		Object literals are useful for simple one-off or multiple objects that are similar in structure and don't require additional functionality beyond their basic properties and 		methods. 
+
+		You can create them quickly and easily using simple syntax. Now, one of the biggest benefits of constructive functions is reusability. 
+
+		Constructive functions create a base template that other objects inherit from which helps reduce code duplication and provides a consistent set of properties and methods 		across multiple related objects. 
+
+		Overall, constructors help provide more control over your objects, and because of that developers often use constructors to create more complex objects that require 
+		specific behaviors and properties. 
+
+		And are generally preferred for larger scale applications and object-oriented programming where modularity, organization and reusability are important. 
+
+		Constructor functions are just one of the many tools available in JavaScript. The choice of which to use between constructors and object literals often depends on the 		specific needs of your application.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
