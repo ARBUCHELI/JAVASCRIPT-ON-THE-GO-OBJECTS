@@ -145,6 +145,54 @@ That way the next time you come across the term constructor or constructor funct
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Create objects using an existing object as the prototype
+----------------------------------------------------------
+Part of what makes working with JavaScript objects tricky is the many different ways to create and work with them. 
+
+However, the more you learn about them, the better you can use their many features and advantages. 
+
+Understanding the underlying concepts of objects can make your code more powerful, flexible, and reusable. 
+
+Objects offer different ways of implementing inheritance, which as you've learned, is how objects can borrow, or inherit properties and methods from other objects. 
+
+One way to implement inheritance is with a constructor, which we've talked about. And the other common way is with the built-in object.create method. 
+
+Object.create lets you create a new object using an existing object as the prototype. The prototype contains all the features that any newly created objects will inherit. 
+
+So take a moment to imagine an object A that you want to be a prototype of an object B. For that to happen, object B needs a way to link to, or access the properties of object A. 
+
+That would make object B an extension of object A, and then you could create other objects from A, like object C and D. 
+
+So the object.create method facilitates linking an object to a prototype. 
+
+It takes an existing object, the prototype, as an argument, and returns a new object containing the specified prototype object in properties. 
+
+Then object.create lets you customize the new object, by adding more properties through an optional second argument. 
+
+So for example, say you define a car object as a prototype for new objects. 
+
+The prototype includes all the specifications for a car, like its size, shape, color, and features. 
+
+Based on this prototype, you can create copies of the same car object with consistent specifications. 
+
+In JavaScript you create a new object by assigning object.create to a variable, let's name it Phantom GT, and pass it the car object as its argument. 
+
+The Phantom GT object now has all the properties and methods of the car object, and we can access and modify them as we would any other object. 
+
+Now any changes you make to the car prototype object will affect all objects that inherit from it. 
+
+So if we were to add a new property to the car object, like self-driving, all objects that inherit from the car object, including phantom GT, will also have the self-driving property. 
+
+And there's so much more that the object.create method can do, so I encourage you to look into and experiment with it. 
+
+Overall, object.create allows more fine-tuned control over how you create an object, by using an existing object as the prototype, which provides flexibility and makes it possible to 
+create objects that share common functionality without duplicate code.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
