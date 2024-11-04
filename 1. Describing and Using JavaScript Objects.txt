@@ -240,6 +240,47 @@ So let's first talk about the Object.assign method. This method copies the prope
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Common ways to iterate over objects
+-------------------------------------
+Iteration is a common task in JavaScript programming that allows you to perform an action or execute a set of instructions on each item of a collection, like an array or an object. 
+Sometimes you'll need to iterate or loop through an object to extract specific information, display certain information to users, or modify data by applying certain logic or computations. 
+If you've worked with for loops and iteration methods like map and forEach, you might be surprised to learn that those will not work with objects because JavaScript objects are not iterable data structures by default, meaning you can't loop through objects like you would with arrays. 
+
+So let's take a moment to go over the most common methods used to iterate through JavaScript objects. (stove burner clicking) 
+
+Think about an object representing a recipe. Each property is an ingredient in the recipe, and its value is the amount or measurement. And you want to loop through the recipe object to display each ingredient and measurement in a list. (bell dings) 
+
+The simplest and most common way to iterate through an object nowadays is with the for in loop. 
+
+	So for instance, to display the recipe's ingredients, for in can loop through the properties of the recipe object. 
+
+	And from that, you can return and display each ingredient and its corresponding value. 
+
+JavaScript provides other tools to let developers quickly iterate through and extract specific information from an object. 
+
+You'll often come across a method like Object.keys, which returns an array containing all the property keys of an object. 
+
+So for example, if you want to create a list of all the ingredients in your recipe, you can use Object.keys to get an array of all the ingredient properties, and then you might use an iteration method like map or forEach to do something with that data, like create the list and display it on a webpage. 
+
+Or if you'd like to create an array containing only the values of every property in an object, you'd use the Object.values method. 
+
+Think about an object representing a shopping cart with each item's name and price, and you want to calculate the total price of all the items in the cart. 
+
+To do this, you can use the Object.values method to get an array of all the item prices, and then use JavaScript's reduce method to sum them up. 
+
+Finally, if you need an object's keys and values. the Object.entries method will return a nested array with each key value pair. 
+
+It's almost like converting an object into an array. And JavaScript's destructuring syntax comes in really handy when working with the Object.entries method. 
+
+So for example, you can use Object.entries to turn an object into an array of key value pairs, then combine it with the forEach method or even JavaScript's for of loop to easily access both the key and the value using array destructuring. 
+
+Whether you want to display or extract specific information from an object, you have several methods to iterate over it. 
+
+The for in loop iterates through an object's properties, while Object.keys, Object.values, and Object.entries are useful when you need to return an array from the properties and values of an object.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
