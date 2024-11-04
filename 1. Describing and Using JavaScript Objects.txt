@@ -191,6 +191,83 @@ create objects that share common functionality without duplicate code.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Merge two or more JavaScript objects into a new object
+--------------------------------------------------------
+Have you ever needed to combine two or more objects into one object? For instance, you may have had an object containing properties you wanted to copy into another object so that you can work more efficiently with the data. 
+
+Thinking back to your address book, let's say you had multiple contacts with the same address and you want to avoid manually repeating and copying that information into all contact objects sharing the same address. 
+
+Merging objects is a common task you can quickly do in one of two ways, 
+
+	JavaScript's Object.assign method or 
+
+	the spread operator. 
+
+So let's first talk about the Object.assign method. This method copies the properties and values of one or more objects to a target object. 
+
+	You pass Object.assign the target object first or the object receiving the copied properties and any subsequent arguments are the source objects, containing the properties you want 	to copy. 
+
+	Here's an example of how Objec.assign works. 
+
+	Imagine you have a target object with the properties A and B, and a source object with a property C. When you use Object.assign to merge the source object into the target object, 	the resulting object will have the properties A, B, and C. 
+
+	And later, you might also pass a new source object into Object.assign, which holds the properties D and E. In that case, the return target object will have the properties A, B, C, 	D, and E. 
+
+	JavaScript's spread operator also lets you copy the properties of an object into a new object using a much shorter syntax, represented by three dots. So let's say that you have an 	object named Ellie, holding properties for a contact in your address book and you want to copy the properties of a shared address object into the Ellie object. 
+
+	Well, in that case, you can use the spread syntax inside the Ellie object with dot, dot, dot, shared address and that will do the trick. 
+
+	All properties of the shared address object will be copied into and appear inside the Ellie object. And you could also use the spread syntax to create entirely new objects by 	copying multiple objects into one. 
+
+	Keep in mind that both Object.assign and the spread operator create what's called a shallow copy of a source object. 
+
+	A shallow copy only duplicates the top level properties of the source object. Now the new object is still a distinct entity. However, if the source object contains any nested 	objects, they will not be duplicated as a separate copy. Instead, they get referenced to the exact location in memory as the source. So that means that changes made to one will 	affect the other because they both share a reference to the same value in memory. 
+
+	That said, I highly recommend looking into shallow copies versus deep copies when it comes to JavaScript objects. 
+
+	Finally, one key difference between the Object.assign method and the spread operator is that Object.assign overwrites properties with the same name in the target object. 
+
+	Now, on the other hand, the spread operator only adds properties that don't exist in the target object. 
+
+	Also, Object.assign can mutate or modify a target object in place, whereas the spread syntax can't. 
+
+	The Object.assign method and the spread operator are useful tools that simplify many programming tasks like merging objects. 
+
+	In general, if you need to merge two or more objects into a single target object or clone an object, Object.assign is a good choice. 
+
+	And if you want to create a new object with some modifications or additions to an existing object, then the spread operator is more concise and easier to use.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
