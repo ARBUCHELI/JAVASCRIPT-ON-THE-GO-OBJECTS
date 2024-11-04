@@ -326,7 +326,47 @@ Overall, the more familiar you are with your tools, the better you will be at ch
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Class-based vs. prototype-based inheritance
+---------------------------------------------
+One of the most important aspects of JavaScript is its ability to implement object-oriented programming, or OOP concepts like inheritance which lets you share code between objects. 
+Throughout this course, you've learned the basics of inheritance and creating objects via constructors, prototypes, and even classes. 
 
+Developers new to JavaScript often find inheritance tricky to understand, because these concepts can differ from what they've learned working with other programming languages. 
+
+So let's wrap up by reviewing the difference between the two main types of inheritance you'll often hear about in JavaScript, class-based and prototypal inheritance. 
+
+Class-based or classical inheritance is when you write a class to define objects. Classes inherit or extend from another class creating a hierarchical structure of class subclass relationships. 
+
+A child class may take all the functionality from a parent class and add more custom properties and behavior. 
+
+On the other hand, prototype based inheritance does not involve classes. 
+
+Instead, objects inherit directly from other objects and share properties and methods via prototypes. 
+
+Whereas classes are connected and can inherit through parent-child hierarchies. 
+
+Objects in prototype based inheritance are linked together via the prototype chain through a special prototype property that every object has. 
+
+Remember that the classes you might know from traditional object oriented programming languages like Java or C++ do not technically exist in JavaScript. 
+
+While classes may provide a convenient way to define objects in JavaScript, they are merely syntactic sugar for constructive functions. 
+
+You'll often hear JavaScript referred to as a prototype based language, so you might be surprised to learn that class-based inheritance itself is implemented on top of prototypal inheritance. 
+
+So which approach is better? Well, it depends on your needs and comfort level with JavaScript. 
+
+The class-based approach might seem more convenient and familiar to developers from a traditional OOP background, providing a clear structure for creating objects, and the native prototype based approach can often be simpler and more flexible when you need to create objects that inherit from other objects. 
+
+And prototypes are usually more memory efficient and lightweight for object creation compared to classes. 
+
+Both approaches generally allow for better code reuse, organization and maintainability. 
+
+Both have well-known benefits and drawbacks. 
+
+So ultimately, the choice between class-based and prototypal inheritance depends on the project's needs. But remember, when it comes to inheritance, JavaScript only has one construct and that is the object.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
