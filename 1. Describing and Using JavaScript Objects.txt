@@ -281,6 +281,51 @@ The for in loop iterates through an object's properties, while Object.keys, Obje
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* JavaScript classes
+--------------------
+So far, we've reviewed how to create objects using object literals and constructor functions. 
+
+Both have some differences in syntax and behavior. 
+
+JavaScript also has a class construct that provides an alternative syntax for creating objects. You can use classes to achieve similar functionality to constructor functions and they're useful for object oriented programming. 
+
+Classes were introduced in JavaScript with the release of ECMAScript 2015 or ES6. Before that, JavaScript had no native class implementation. 
+
+It used prototype based inheritance where only constructor functions allowed for object-oriented programming, which presented a challenge for developers who were used to using classes and other programming languages. 
+
+So adding classes made it easier for developers familiar with classes and other languages to write and understand object-oriented code in JavaScript. 
+
+So if you're looking for a more structured and well-known approach to writing object-oriented code in JavaScript, then classes might be for you. 
+
+The syntax for defining a class uses the keyword class followed by the name of the class. Inside the class you define properties and methods for new class instances within a constructor method similar to how you would with a constructor function. 
+
+This special constructor method is what creates and initializes any new object instances of the class with default properties. 
+
+You can also define methods inside the class to manipulate the objects properties or perform other actions. Once you've defined a class you can create instances of the class using the new keyword, which like constructor functions creates a new object based on the class definition. And each class instance has its own set of properties and behaviors, but all instances share the same class blueprint or template. 
+
+So for example, you might define a class called animal with a constructor method. Creating properties such as names, species and age and methods like eat and sleep. You can then create instances of the animal class such as a dog, a cat, or a bird, each with its own unique values for the properties. 
+
+One of the benefits of using classes is that they provide a clear and organized way to define objects with similar properties and behaviors, which makes creating and managing multiple instances of the same object easier. 
+
+JavaScript classes can also extend from other classes. The extends keyword creates a child class that inherits all the properties and methods of a parent class. 
+
+For example, you might use extends to create a subclass of the animal class called sea animals, which reuses the properties and methods of the animal class with other custom properties that only apply to sea animals. It's important to remember that under the hood JavaScript classes are mostly syntactic sugar or an abstraction over the prototype based inheritance model we covered earlier. 
+
+Classes still use prototypes to create objects and define methods. They're just a more elegant and convenient way of defining constructive functions and working in a more traditional object-oriented programming style. 
+
+However, JavaScript classes can also be misused or overused leading to potential problems or unexpected results like any programming feature. 
+
+So for example, classes lack built-in support for private properties or methods, which would make it possible to access or modify them directly. 
+
+Also, creating class instances in JavaScript can be relatively slow compared to working with prototypes. And if you're a developer from a traditional class-based language, you'll find that JavaScripts approach to classes is quite different. 
+
+So you'll need to make sure that you understand what's going on in the interpreter when using the class keyword and we'll explore this further in the next video. 
+
+Overall, the more familiar you are with your tools, the better you will be at choosing the best pattern to solve a problem rather than relying solely on the class pattern.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
