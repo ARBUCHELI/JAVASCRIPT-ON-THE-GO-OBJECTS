@@ -368,6 +368,23 @@ So ultimately, the choice between class-based and prototypal inheritance depends
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Conclusion
+------------
+
+* Next steps
+------------
+We've covered quite a bit in this course, from creating and using JavaScript Objects to uncovering the ideas behind inheritance and the prototype chain in object oriented programming. 
+
+We also explored concepts like object iteration, classes and the key differences between class and prototype based inheritance. 
+
+So I hope you learned a lot from this course and gained valuable new insight into programming with JavaScript Objects. 
+
+When choosing an object creation and design pattern, it's important to consider the needs of your project code readability and maintainability, I highly recommend checking out Emmanuel Henry's course on JavaScript Design Patterns to learn more. 
+
+Remember to download your certificate of completion to show your new skills to colleagues and friends. 
+
+And if you have any questions or want to share your thoughts on the course feel free to submit them in the course Q and A. And if you'd like to get in touch, be sure to visit my LinkedIn page to connect or reach out on Twitter. My handle is @gilh. Thanks for listening and happy coding.
+
 
 
 
